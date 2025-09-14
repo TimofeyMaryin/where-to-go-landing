@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Куда пойти? - Найди вечеринки по душе!</title>
+    <link rel="icon" type="image/png" href="assets/web_icon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>КУДА ПОЙТИ?</span>
+                </div>
+                <nav class="nav" id="nav">
+                    <a href="#advantages" class="nav-link">Преимущества</a>
+                    <a href="#download" class="nav-link">Telegram</a>
+                    <a href="#faq" class="nav-link">Вопросы</a>
+                    <a href="#investors" class="nav-link">Инвесторам</a>
+                    <a href="#contacts" class="nav-link">Контакты</a>
+                </nav>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Найди <span class="highlight">Куда пойти?</span> с нашим приложением! 🎉
+                    </h1>
+                    <p class="hero-subtitle">Вечеринки по душе!</p>
+                    <button class="btn-primary">
+                        <i class="fab fa-telegram"></i>
+                        Перейти в ТГ канал
+                    </button>
+                </div>
+                <div class="hero-phone">
+                    <div class="phone-image-container">
+                        <img src="assets/web_phone.png" alt="Мобильное приложение Куда пойти?" class="phone-image">
+                        <div class="phone-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-bg">
+            <div class="hero-trail-effect">
+                <div class="hero-trail hero-trail-1"></div>
+                <div class="hero-trail hero-trail-2"></div>
+                <div class="hero-trail hero-trail-3"></div>
+                <div class="hero-trail hero-trail-4"></div>
+                <div class="hero-trail hero-trail-5"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="advantages">
+        <div class="container">
+            <div class="features-content">
+                <div class="features-list">
+                    <div class="feature-item">
+                        <div class="feature-number">1</div>
+                        <div class="feature-text">
+                            <h3>Удобный поиск</h3>
+                            <p>Легко фильтруйте события по интересам, месту и времени.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-number">2</div>
+                        <div class="feature-text">
+                            <h3>Свежие предложения</h3>
+                            <p>Получайте уведомления о самых горячих вечеринках в вашем городе.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-number">3</div>
+                        <div class="feature-text">
+                            <h3>Сообщество</h3>
+                            <p>Познакомьтесь с новыми людьми и обменяйтесь впечатлениями.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="features-buttons">
+                    <button class="btn-secondary">Преимущества</button>
+                    <button class="btn-primary">Перейти в ТГ канал</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section class="download" id="download">
+        <div class="container">
+            <div class="download-content">
+                <div class="download-text">
+                    <h2 class="download-title">
+                        Присоединяйтесь к <span class="highlight">Куда пойти?</span> уже сегодня!
+                    </h2>
+                    <p class="download-description">
+                        Откройте для себя мир незабываемых вечеринок! Пусть каждый вечер будет наполнен яркими эмоциями и приятными встречами. Не ждите подходящего момента — создайте его сами!
+                    </p>
+                    <div class="download-buttons">
+                        <button class="btn-google-play">
+                            <i class="fab fa-telegram"></i>
+                            Telegram канал
+                        </button>
+                        <button class="btn-apk">
+                            <i class="fab fa-telegram"></i>
+                            Telegram группа
+                        </button>
+                    </div>
+                </div>
+                <div class="download-phone">
+                    <div class="phone-image-container tilted">
+                        <img src="assets/web_phone.png" alt="Мобильное приложение Куда пойти?" class="phone-image">
+                        <div class="phone-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Combined Features and User Selection Section -->
+    <section class="combined-section" id="features">
+        <div class="container">
+            <div class="combined-layout">
+                <!-- Left Side - User Selection -->
+                <div class="user-selection-side">
+                    <div class="selection-card">
+                        <div class="selection-illustration">
+                            <div class="avatar-container">
+                                <img src="assets/web_avatar.png" alt="Аватар пользователя" class="avatar-image">
+                            </div>
+                        </div>
+                        <div class="selection-options">
+                            <label class="checkbox-label">
+                                <input type="checkbox" checked>
+                                <span class="checkmark"></span>
+                                Я посетитель
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                                Я организатор
+                            </label>
+                        </div>
+                        <button class="btn-primary">
+                            <i class="fab fa-telegram"></i>
+                            Перейти в ТГ канал
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Right Side - Features Grid -->
+                <div class="features-side">
+                    <div class="features-header">
+                        <button class="btn-features">Фичи</button>
+                    </div>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3>Найди друзей</h3>
+                            <p>Легко находите и добавляйте друзей, чтобы делиться впечатлениями и вместе посещать вечеринки.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <h3>Вечеринки рядом</h3>
+                            <p>Легко находите и добавляйте друзей, чтобы делиться впечатлениями и вместе посещать вечеринки.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                            <h3>Планируй отдых</h3>
+                            <p>Легко находите и добавляйте друзей, чтобы делиться впечатлениями и вместе посещать вечеринки.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <h3>Обсуждай</h3>
+                            <p>Легко находите и добавляйте друзей, чтобы делиться впечатлениями и вместе посещать вечеринки.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Form -->
+    <section class="registration-section" id="registration">
+        <div class="container">
+            <div class="registration-content">
+                <div class="registration-header">
+                    <h2 class="registration-title">
+                        Готовы начать? <span class="highlight">Зарегистрируйтесь!</span>
+                    </h2>
+                    <p class="registration-subtitle">
+                        Присоединяйтесь к сообществу и найдите свои идеальные вечеринки уже сегодня
+                    </p>
+                </div>
+                
+                <div class="registration-form-container">
+                    <form class="registration-form" id="registrationForm">
+                        <div class="form-group">
+                            <label for="email">Email <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required placeholder="Введите ваш email">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="telegram">Telegram</label>
+                            <input type="text" id="telegram" name="telegram" placeholder="@username или номер телефона">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="interests">Интересы (выберите несколько)</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="interests" value="music">
+                                    <span class="checkmark"></span>
+                                    Музыка
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="interests" value="dance">
+                                    <span class="checkmark"></span>
+                                    Танцы
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="interests" value="art">
+                                    <span class="checkmark"></span>
+                                    Искусство
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="interests" value="sports">
+                                    <span class="checkmark"></span>
+                                    Спорт
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="interests" value="gaming">
+                                    <span class="checkmark"></span>
+                                    Игры
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="interests" value="food">
+                                    <span class="checkmark"></span>
+                                    Еда и напитки
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary registration-btn">
+                            <i class="fas fa-user-plus"></i>
+                            Зарегистрироваться
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="faq-content">
+                <div class="faq-header">
+                    <h2 class="faq-title">Если у вас остались вопросы</h2>
+                    <button class="btn-faq">Вопросы</button>
+                </div>
+                
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Как присоединиться к сообществу?</span>
+                            <div class="faq-icon">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Присоединиться к нашему сообществу очень просто! Нажмите кнопку "Перейти в ТГ канал" и подпишитесь на наш Telegram канал, где мы публикуем все актуальные события и вечеринки.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Как подключить тариф PRO?</span>
+                            <div class="faq-icon">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Тариф PRO доступен в настройках приложения. Выберите "Подписка" в меню и следуйте инструкциям для активации премиум функций.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Как создать свое мероприятие?</span>
+                            <div class="faq-icon">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="faq-answer">
+                            <p>В приложении нажмите кнопку "+" в нижней части экрана, выберите "Создать событие" и заполните все необходимые поля: название, дату, место и описание.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Как настроить уведомления?</span>
+                            <div class="faq-icon">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Перейдите в "Настройки" → "Уведомления" и выберите типы событий, о которых хотите получать уведомления. Можно настроить время и частоту уведомлений.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item active">
+                        <div class="faq-question">
+                            <span>Могу ли я добавлять друзей в приложении?</span>
+                            <div class="faq-icon">
+                                <i class="fas fa-chevron-up"></i>
+                            </div>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Да! Вы можете находить и добавлять друзей, чтобы делиться впечатлениями о мероприятиях. Используйте поиск по имени или username для поиска знакомых.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Что делать, если я столкнулся с проблемой?</span>
+                            <div class="faq-icon">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Обратитесь в службу поддержки через раздел "Помощь" в приложении или напишите нам на email. Мы постараемся решить вашу проблему в кратчайшие сроки.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Trail Effect -->
+        <div class="trail-effect">
+            <div class="trail trail-1"></div>
+            <div class="trail trail-2"></div>
+            <div class="trail trail-3"></div>
+        </div>
+    </section>
+
+    <!-- Investor Section -->
+    <section class="investor-section" id="investors">
+        <div class="container">
+            <div class="investor-content">
+                <div class="investor-header">
+                    <h2 class="investor-title">
+                        Станьте частью <span class="highlight">революции</span> в мире развлечений!
+                    </h2>
+                    <p class="investor-subtitle">
+                        Мы создаем будущее, где каждый вечер может стать незабываемым. Присоединяйтесь к нам и получите возможность быть в авангарде индустрии развлечений.
+                    </p>
+                </div>
+                
+                <div class="investor-grid">
+                    <div class="investor-card">
+                        <div class="investor-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Раннее инвестирование</h3>
+                        <p>Получите эксклюзивные условия и максимальную отдачу от инвестиций на ранней стадии развития проекта.</p>
+                    </div>
+                    
+                    <div class="investor-card">
+                        <div class="investor-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Растущий рынок</h3>
+                        <p>Индустрия развлечений показывает стабильный рост. Мы предлагаем инновационное решение для этого рынка.</p>
+                    </div>
+                    
+                    <div class="investor-card">
+                        <div class="investor-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Активное сообщество</h3>
+                        <p>Уже сейчас у нас есть заинтересованная аудитория, готовая использовать наше приложение.</p>
+                    </div>
+                </div>
+                
+                <div class="investor-cta">
+                    <h3>Готовы инвестировать в будущее?</h3>
+                    <p>Свяжитесь с нами для обсуждения условий инвестирования и получения подробной презентации проекта.</p>
+                    
+                    <div class="contact-buttons">
+                        <button class="btn-contact" onclick="openContactModal()">
+                            <i class="fas fa-handshake"></i>
+                            Связаться с разработчиком
+                        </button>
+                        <button class="btn-investor">
+                            <i class="fas fa-briefcase"></i>
+                            Инвестировать в проект
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Investor Trail Effect -->
+        <div class="investor-trail-effect">
+            <div class="investor-trail investor-trail-1"></div>
+            <div class="investor-trail investor-trail-2"></div>
+            <div class="investor-trail investor-trail-3"></div>
+        </div>
+    </section>
+
+    <!-- Contact Modal -->
+    <div class="contact-modal" id="contactModal">
+        <div class="contact-modal-content">
+            <div class="contact-modal-header">
+                <h3>Связаться с разработчиком</h3>
+                <button class="close-modal" onclick="closeContactModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="contact-modal-body">
+                <p>Готовы обсудить инвестиции или сотрудничество? Свяжитесь с нами любым удобным способом:</p>
+                
+                <div class="contact-options">
+                    <a href="https://t.me/timofeyMaryin" target="_blank" class="contact-option">
+                        <div class="contact-icon telegram">
+                            <i class="fab fa-telegram"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h4>Telegram</h4>
+                            <p>@timofeyMaryin</p>
+                        </div>
+                    </a>
+                    
+                    <a href="mailto:timofeymaryin9@gmail.com" class="contact-option">
+                        <div class="contact-icon email">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-info">
+                            <h4>Email</h4>
+                            <p>timofeymaryin9@gmail.com</p>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="contact-note">
+                    <p><i class="fas fa-info-circle"></i> Отвечу в течение 24 часов</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>КУДА ПОЙТИ?</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#advantages">Преимущества</a>
+                    <a href="#download">Telegram</a>
+                    <a href="#faq">Вопросы</a>
+                    <a href="#investors">Инвесторам</a>
+                    <a href="#contacts">Контакты</a>
+                </div>
+                <div class="footer-social">
+                    <span>@timofeyMaryin</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
