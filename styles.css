@@ -866,6 +866,23 @@ body {
     box-shadow: 0 0 0 3px rgba(255, 50, 210, 0.1);
 }
 
+/* Form validation styles */
+.form-group.error input {
+    border-color: #ff4757 !important;
+    box-shadow: 0 0 0 3px rgba(255, 71, 87, 0.1) !important;
+}
+
+.form-group.error label {
+    color: #ff4757 !important;
+}
+
+.field-error {
+    color: #ff4757 !important;
+    font-size: 12px !important;
+    margin-top: 5px !important;
+    display: block;
+}
+
 .form-group input::placeholder {
     color: rgba(255, 255, 255, 0.5);
 }
@@ -954,6 +971,18 @@ body {
     padding: 15px 40px;
     font-size: 18px;
     align-self: center;
+    transition: all 0.3s ease;
+}
+
+.registration-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none !important;
+}
+
+.registration-btn:disabled:hover {
+    transform: none !important;
+    box-shadow: 0 10px 30px rgba(255, 50, 210, 0.3) !important;
 }
 
 /* Footer */

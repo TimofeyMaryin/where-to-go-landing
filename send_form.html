@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отправка формы - Куда пойти?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1a0b2e 0%, #16213e 50%, #0f3460 100%);
+            color: white;
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            max-width: 600px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 40px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 50, 210, 0.2);
+        }
+        .success-icon {
+            font-size: 60px;
+            color: #4CAF50;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #FF32D2;
+            margin-bottom: 20px;
+        }
+        .email-data {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            font-family: monospace;
+            white-space: pre-line;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .copy-btn {
+            background: linear-gradient(90deg, #FF32D2, #6399FF);
+            border: none;
+            padding: 12px 24px;
+            border-radius: 25px;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+            margin: 10px 5px;
+            transition: all 0.3s ease;
+        }
+        .copy-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 50, 210, 0.3);
+        }
+        .back-btn {
+            background: transparent;
+            border: 2px solid #FF32D2;
+            padding: 12px 24px;
+            border-radius: 25px;
+            color: #FF32D2;
+            font-weight: 600;
+            cursor: pointer;
+            margin: 10px 5px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .back-btn:hover {
+            background: #FF32D2;
+            color: white;
+        }
+        .instructions {
+            background: rgba(99, 153, 255, 0.1);
+            border: 1px solid rgba(99, 153, 255, 0.3);
+            border-radius: 10px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="success-icon">✅</div>
+        <h1>Форма успешно отправлена!</h1>
+        
+        <div class="instructions">
+            <h3>📧 Что делать дальше:</h3>
+            <ol>
+                <li>Скопируйте данные ниже</li>
+                <li>Отправьте их на <strong>lisa334.fool.434.kk@gmail.com</strong></li>
+                <li>Или используйте кнопку "Отправить email"</li>
+            </ol>
+        </div>
+        
+        <div class="email-data" id="emailData">
+            <!-- Данные будут вставлены сюда -->
+        </div>
+        
+        <div style="text-align: center;">
+            <button class="copy-btn" onclick="copyToClipboard()">📋 Скопировать данные</button>
+            <button class="copy-btn" onclick="sendEmail()">📧 Отправить email</button>
+            <a href="index.html" class="back-btn">← Вернуться на сайт</a>
+        </div>
+    </div>
+
+    <script>
+        console.log('🚀 Success page loaded');
+        
+        // Get data from URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        console.log('📝 URL parameters:', Object.fromEntries(urlParams.entries()));
+        
+        const email = urlParams.get('email') || 'Не указан';
+        const telegram = urlParams.get('telegram') || 'Не указан';
+        const interests = urlParams.get('interests') || 'Не указаны';
+        const date = new Date().toLocaleString('ru-RU');
+        
+        console.log('📧 Form data received:', { email, telegram, interests, date });
+        
+        // Create email content
+        const emailSubject = '🎉 Новая регистрация в приложении "Куда пойти?"';
+        const emailBody = `Новая регистрация в приложении "Куда пойти?"
+
+📧 Email: ${email}
+📱 Telegram: ${telegram}
+🎯 Интересы: ${interests}
+📅 Дата регистрации: ${date}
+🌐 Сайт: ${window.location.origin}
+
+Следующие шаги:
+• Добавить пользователя в Telegram канал
+• Отправить приветственное сообщение  
+• Добавить в базу данных пользователей
+
+---
+Это письмо отправлено автоматически с сайта "Куда пойти?"
+Время: ${date}`;
+
+        // Display data
+        document.getElementById('emailData').textContent = emailBody;
+        
+        // Copy to clipboard function
+        function copyToClipboard() {
+            console.log('📋 Attempting to copy to clipboard');
+            console.log('📋 Text to copy:', emailBody);
+            
+            navigator.clipboard.writeText(emailBody).then(() => {
+                console.log('✅ Data copied to clipboard successfully');
+                alert('Данные скопированы в буфер обмена!');
+            }).catch((error) => {
+                console.error('❌ Failed to copy to clipboard:', error);
+                alert('Не удалось скопировать. Выделите текст вручную.');
+            });
+        }
+        
+        // Send email function
+        function sendEmail() {
+            console.log('📧 Attempting to send email from success page');
+            const mailtoLink = `mailto:lisa334.fool.434.kk@gmail.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
+            console.log('📧 Mailto link:', mailtoLink);
+            
+            try {
+                window.location.href = mailtoLink;
+                console.log('✅ Email client should open');
+            } catch (error) {
+                console.error('❌ Failed to open email client:', error);
+                alert('Не удалось открыть почтовый клиент. Скопируйте данные и отправьте вручную.');
+            }
+        }
+    </script>
+</body>
+</html>
