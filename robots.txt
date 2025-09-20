@@ -1,0 +1,25 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://timofeymaryin.github.io/where-to-go-landing/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# Allow all search engines to index the site
+Disallow:
+
+# Block access to sensitive files (if any)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.log$
+Disallow: /*.tmp$
+
+# Allow access to CSS and JS files for better rendering
+Allow: /styles.css
+Allow: /script.js
+Allow: /assets/
+
+# Host directive
+Host: timofeymaryin.github.io
